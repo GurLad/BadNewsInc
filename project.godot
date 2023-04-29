@@ -17,6 +17,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 PortraitController="*res://Scenes/Autoloads/PortraitController.tscn"
+VoiceActingController="*res://Scenes/Autoloads/VoiceActingController.tscn"
 
 [display]
 

@@ -13,4 +13,15 @@ public static class ExtensionMethods
             _ => -1
         };
     }
+
+    public static string IntToMessengerName(this int i)
+    {
+        return i switch
+        {
+            0 => "Luke",
+            1 => "Flake",
+            2 => "Palla",
+            _ => "whaterrorerror"
+        };
+    }
 }

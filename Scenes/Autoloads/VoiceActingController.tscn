@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b043wx7e6r5hv"]
+
+[ext_resource type="Script" path="res://Scripts/VoiceActingController.cs" id="1_ljd0j"]
+
+[node name="VoiceActingController" type="Node"]
+script = ExtResource("1_ljd0j")

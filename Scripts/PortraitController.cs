@@ -4,7 +4,7 @@ using System;
 
 public partial class PortraitController : Node
 {
-    public static Dictionary<string, Texture2D> Portraits;
+    public static Dictionary<string, Texture2D> Portraits { get; private set; }
 
     public override void _Ready()
     {
@@ -20,7 +20,6 @@ public partial class PortraitController : Node
                 if (!dir.CurrentIsDir() && !fileName.Contains(".import"))
                 {
                     string name = fileName.Substring(0, fileName.LastIndexOf("."));
-                    GD.Print(name);
                     Texture2D texture = ResourceLoader.Load<CompressedTexture2D>("res://AllPortraits/" + fileName);
                     Portraits.Add(name, texture);
                 }
@@ -31,6 +30,5 @@ public partial class PortraitController : Node
         {
             GD.Print("An error occurred when trying to access the path.");
         }
-        GD.Print("Success!");
     }
 }
