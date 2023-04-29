@@ -1,9 +1,9 @@
 [gd_scene load_steps=3 format=3 uid="uid://cy6lw6vfq74xa"]
 
-[ext_resource type="PackedScene" uid="uid://bxg6od4r2eiyp" path="res://Scenes/UI/Portrait.tscn" id="1_t0d56"]
-[ext_resource type="PackedScene" uid="uid://dd3luckalopwu" path="res://Scenes/UI/MessengerButton.tscn" id="2_ds4ru"]
+[ext_resource type="PackedScene" uid="uid://bxg6od4r2eiyp" path="res://Scenes/UI/Portrait.tscn" id="1_wdjx0"]
+[ext_resource type="PackedScene" uid="uid://dd3luckalopwu" path="res://Scenes/UI/MessengerButton.tscn" id="2_3i65a"]
 
-[node name="Preperations" type="Control"]
+[node name="Preparations" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -48,7 +48,7 @@ layout_mode = 2
 [node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="Portrait" parent="HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer" instance=ExtResource("1_t0d56")]
+[node name="Portrait" parent="HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer" instance=ExtResource("1_wdjx0")]
 layout_mode = 2
 
 [node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer"]
@@ -58,7 +58,8 @@ text = "Name"
 [node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer"]
 layout_mode = 2
 text = "Description
-with 3
+with
+4
 lines."
 
 [node name="PanelContainer2" type="PanelContainer" parent="HBoxContainer/VBoxContainer"]
@@ -70,15 +71,15 @@ layout_mode = 2
 [node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/VBoxContainer/PanelContainer2/VBoxContainer"]
 layout_mode = 2
 
-[node name="MessengerButton" parent="HBoxContainer/VBoxContainer/PanelContainer2/VBoxContainer/HBoxContainer" instance=ExtResource("2_ds4ru")]
+[node name="MessengerButton" parent="HBoxContainer/VBoxContainer/PanelContainer2/VBoxContainer/HBoxContainer" instance=ExtResource("2_3i65a")]
 layout_mode = 2
 size_flags_horizontal = 6
 
-[node name="MessengerButton2" parent="HBoxContainer/VBoxContainer/PanelContainer2/VBoxContainer/HBoxContainer" instance=ExtResource("2_ds4ru")]
+[node name="MessengerButton2" parent="HBoxContainer/VBoxContainer/PanelContainer2/VBoxContainer/HBoxContainer" instance=ExtResource("2_3i65a")]
 layout_mode = 2
 size_flags_horizontal = 6
 
-[node name="MessengerButton3" parent="HBoxContainer/VBoxContainer/PanelContainer2/VBoxContainer/HBoxContainer" instance=ExtResource("2_ds4ru")]
+[node name="MessengerButton3" parent="HBoxContainer/VBoxContainer/PanelContainer2/VBoxContainer/HBoxContainer" instance=ExtResource("2_3i65a")]
 layout_mode = 2
 size_flags_horizontal = 6
 
@@ -88,16 +89,9 @@ text = "Description
 with 3
 lines."
 
-[node name="PanelContainer3" type="PanelContainer" parent="HBoxContainer/VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-
-[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/PanelContainer3"]
-layout_mode = 2
-text = "Gifts TBA"
-
 [node name="PanelContainer4" type="PanelContainer" parent="HBoxContainer/VBoxContainer"]
 layout_mode = 2
+size_flags_vertical = 3
 
 [node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/VBoxContainer/PanelContainer4"]
 layout_mode = 2

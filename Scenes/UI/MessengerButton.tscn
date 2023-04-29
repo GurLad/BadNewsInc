@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dd3luckalopwu"]
 
-[ext_resource type="Texture2D" uid="uid://b15pjrwprr6bw" path="res://Textures/PortraitFrameBack.png" id="1_7ndjr"]
+[ext_resource type="Texture2D" uid="uid://dujfnagjrh127" path="res://Textures/PortraitFrameBack.png" id="1_7ndjr"]
 [ext_resource type="Texture2D" uid="uid://doq841h76mtq6" path="res://Textures/Faces/Messengers/Palla/Palla.png" id="2_42ler"]
 
 [node name="MessengerButton" type="VBoxContainer"]

@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bxg6od4r2eiyp"]
 
 [ext_resource type="Texture2D" uid="uid://doq841h76mtq6" path="res://Textures/Faces/Messengers/Palla/Palla.png" id="1_8xqn6"]
-[ext_resource type="Texture2D" uid="uid://b15pjrwprr6bw" path="res://Textures/PortraitFrameBack.png" id="1_iic64"]
+[ext_resource type="Texture2D" uid="uid://dujfnagjrh127" path="res://Textures/PortraitFrameBack.png" id="1_iic64"]
 
 [node name="Portrait" type="TextureRect"]
 offset_right = 40.0

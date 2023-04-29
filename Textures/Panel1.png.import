@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dujfnagjrh127"
-path="res://.godot/imported/PortraitFrameBack.png-1b667ab61dba55a286a83eb311d2f9aa.ctex"
+uid="uid://8dvk1iqpsjtb"
+path="res://.godot/imported/Panel1.png-35d5bd251262ef043aeaee4259ff4f72.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/PortraitFrameBack.png"
-dest_files=["res://.godot/imported/PortraitFrameBack.png-1b667ab61dba55a286a83eb311d2f9aa.ctex"]
+source_file="res://Textures/Panel1.png"
+dest_files=["res://.godot/imported/Panel1.png-35d5bd251262ef043aeaee4259ff4f72.ctex"]
 
 [params]
 

@@ -27,7 +27,15 @@ window/stretch/mode="viewport"
 
 project/assembly_name="BadNewsInc"
 
+[gui]
+
+theme/custom="res://DefaultTheme.tres"
+theme/custom_font="res://Fonts/HelvetiPixel.ttf"
+theme/default_font_antialiasing=0
+theme/default_font_subpixel_positioning=0
+
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 2d/snap/snap_2d_transforms_to_pixel=true
 2d/snap/snap_2d_vertices_to_pixel=true
