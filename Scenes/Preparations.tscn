@@ -124,11 +124,13 @@ layout_mode = 2
 [node name="Send" type="Button" parent="HBoxContainer/VBoxContainer/SendPanel/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
+focus_mode = 0
 text = "Send"
 
 [node name="Preview" type="Button" parent="HBoxContainer/VBoxContainer/SendPanel/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
+focus_mode = 0
 text = "Preview"
 
 [node name="PreviewPlayer" type="AudioStreamPlayer" parent="."]

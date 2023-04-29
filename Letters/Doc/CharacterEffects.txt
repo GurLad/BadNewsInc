@@ -4,3 +4,5 @@ Flake:
 Pitch -10%
 Palla:
 Pitch 20%
+Esther:
+Speed 30%
