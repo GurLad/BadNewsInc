@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dg2bs5v444rmk"
-path="res://.godot/imported/FlakeSpeak2.png-1d33df3e8dde88fd4fa1bf06acb6abda.ctex"
+uid="uid://cm7aioxc2enca"
+path="res://.godot/imported/EstherAngry.png-3659a4f0ab2ca48ef98ee0c25ab823d1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AllPortraits/FlakeSpeak2.png"
-dest_files=["res://.godot/imported/FlakeSpeak2.png-1d33df3e8dde88fd4fa1bf06acb6abda.ctex"]
+source_file="res://Textures/Faces/People/Esther/EstherAngry.png"
+dest_files=["res://.godot/imported/EstherAngry.png-3659a4f0ab2ca48ef98ee0c25ab823d1.ctex"]
 
 [params]
 

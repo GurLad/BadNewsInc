@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bckq2kypngwfb"
-path="res://.godot/imported/PallaSpeak1.png-6c75f63a303c910bfa2d13c583726b88.ctex"
+uid="uid://cimxge6akh7y6"
+path="res://.godot/imported/Palla2.png-9aea3fe452d0d13e443e15edc5abc534.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AllPortraits/PallaSpeak1.png"
-dest_files=["res://.godot/imported/PallaSpeak1.png-6c75f63a303c910bfa2d13c583726b88.ctex"]
+source_file="res://AllPortraits/Palla2.png"
+dest_files=["res://.godot/imported/Palla2.png-9aea3fe452d0d13e443e15edc5abc534.ctex"]
 
 [params]
 

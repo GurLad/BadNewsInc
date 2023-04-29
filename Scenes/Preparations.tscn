@@ -60,7 +60,7 @@ layout_mode = 2
 
 [node name="Portrait" parent="HBoxContainer/VBoxContainer/TargetPanel/VBoxContainer/HBoxContainer" instance=ExtResource("1_wdjx0")]
 layout_mode = 2
-DefaultName = "Luke"
+DefaultName = "Esther"
 
 [node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/TargetPanel/VBoxContainer/HBoxContainer"]
 layout_mode = 2

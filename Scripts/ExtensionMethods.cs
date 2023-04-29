@@ -1,5 +1,7 @@
 using Godot;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 
 public static class ExtensionMethods
 {
@@ -23,5 +25,13 @@ public static class ExtensionMethods
             2 => "Palla",
             _ => "whaterrorerror"
         };
+    }
+
+    public static List<string> GetLineParts(this string source, int part)
+    {
+        string[] mainParts = source.Split('~');
+        List<string> finalParts = mainParts[part].Split('\n').ToList();
+        finalParts = finalParts.Where(a => a != "").ToList();
+        return finalParts;
     }
 }

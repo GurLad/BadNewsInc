@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://bnolkahjg5y6c"]
+
+[ext_resource type="Script" path="res://Scripts/SpeakingPortrait.cs" id="1_cunhp"]
+[ext_resource type="PackedScene" uid="uid://d008ba8mgw1yq" path="res://Scenes/UI/Portrait.tscn" id="1_u003w"]
+
+[node name="SpeakingPortrait" type="PanelContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_cunhp")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="PortraitLeft" parent="HBoxContainer" instance=ExtResource("1_u003w")]
+visible = false
+layout_mode = 2
+
+[node name="Text" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="PortraitRight" parent="HBoxContainer" instance=ExtResource("1_u003w")]
+visible = false
+layout_mode = 2
