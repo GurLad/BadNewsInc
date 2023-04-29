@@ -30,13 +30,13 @@ size_flags_horizontal = 3
 [node name="HBoxContainer" type="VBoxContainer" parent="HBoxContainer/PanelContainer"]
 layout_mode = 2
 
-[node name="Begin" type="Label" parent="HBoxContainer/PanelContainer/HBoxContainer"]
+[node name="Letter" type="Label" parent="HBoxContainer/PanelContainer/HBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_2eac8")
 text = "Dear Esther,
 I hope your past few months were peaceful and quiet.
 As for me and Paul, we had quite the adventure in Scotland!
-I met a lovely sailor in there, and decided to remain in Scotlan with him.
+I met a lovely sailor in there, and decided to remain in Scotland with him.
 Unfortunately, Paul didn't make it.
 I know how much you care for your brother, and I did try my best to help him.
 However, I forgot about his fish allergy, and cooked him a shark for his birthday.
