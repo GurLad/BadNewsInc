@@ -14,6 +14,10 @@ config/name="BadNewsInc"
 config/features=PackedStringArray("4.0", "C#", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+PortraitController="*res://Scenes/Autoloads/PortraitController.tscn"
+
 [display]
 
 window/size/viewport_width=640

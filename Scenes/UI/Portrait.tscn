@@ -1,14 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://bxg6od4r2eiyp"]
+[gd_scene load_steps=4 format=3 uid="uid://d008ba8mgw1yq"]
 
 [ext_resource type="Texture2D" uid="uid://doq841h76mtq6" path="res://Textures/Faces/Messengers/Palla/Palla.png" id="1_8xqn6"]
-[ext_resource type="Texture2D" uid="uid://dujfnagjrh127" path="res://Textures/PortraitFrameBack.png" id="1_iic64"]
+[ext_resource type="Texture2D" uid="uid://dujfnagjrh127" path="res://Textures/UI/PortraitFrameBack.png" id="1_xs5ba"]
+[ext_resource type="Script" path="res://Scripts/Portrait.cs" id="2_ibnps"]
 
 [node name="Portrait" type="TextureRect"]
 offset_right = 40.0
 offset_bottom = 40.0
-texture = ExtResource("1_iic64")
+texture = ExtResource("1_xs5ba")
+script = ExtResource("2_ibnps")
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="Holder" type="TextureRect" parent="."]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5

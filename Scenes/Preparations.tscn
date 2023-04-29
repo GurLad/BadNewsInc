@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cy6lw6vfq74xa"]
 
-[ext_resource type="PackedScene" uid="uid://bxg6od4r2eiyp" path="res://Scenes/UI/Portrait.tscn" id="1_wdjx0"]
-[ext_resource type="PackedScene" uid="uid://dd3luckalopwu" path="res://Scenes/UI/MessengerButton.tscn" id="2_3i65a"]
+[ext_resource type="PackedScene" uid="uid://d008ba8mgw1yq" path="res://Scenes/UI/Portrait.tscn" id="1_wdjx0"]
+[ext_resource type="PackedScene" uid="uid://bwruk0k777k8n" path="res://Scenes/UI/MessengerButton.tscn" id="2_3i65a"]
 
 [node name="Preparations" type="Control"]
 layout_mode = 3
@@ -50,6 +50,7 @@ layout_mode = 2
 
 [node name="Portrait" parent="HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer" instance=ExtResource("1_wdjx0")]
 layout_mode = 2
+DefaultName = "Luke"
 
 [node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
@@ -71,17 +72,29 @@ layout_mode = 2
 [node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/VBoxContainer/PanelContainer2/VBoxContainer"]
 layout_mode = 2
 
-[node name="MessengerButton" parent="HBoxContainer/VBoxContainer/PanelContainer2/VBoxContainer/HBoxContainer" instance=ExtResource("2_3i65a")]
+[node name="Luke" parent="HBoxContainer/VBoxContainer/PanelContainer2/VBoxContainer/HBoxContainer" instance=ExtResource("2_3i65a")]
 layout_mode = 2
 size_flags_horizontal = 6
+PortraitName = "Luke"
+Description = "A nice child. Not very intelligent.
+ + Cute
+ - Doesn't understand complex words."
 
-[node name="MessengerButton2" parent="HBoxContainer/VBoxContainer/PanelContainer2/VBoxContainer/HBoxContainer" instance=ExtResource("2_3i65a")]
+[node name="Flake" parent="HBoxContainer/VBoxContainer/PanelContainer2/VBoxContainer/HBoxContainer" instance=ExtResource("2_3i65a")]
 layout_mode = 2
 size_flags_horizontal = 6
+PortraitName = "Flake"
+Description = "A bombastic and loud man. Loves shouting.
+ + Very enthusiastic and charismatic
+ - Has zero tact"
 
-[node name="MessengerButton3" parent="HBoxContainer/VBoxContainer/PanelContainer2/VBoxContainer/HBoxContainer" instance=ExtResource("2_3i65a")]
+[node name="Palla" parent="HBoxContainer/VBoxContainer/PanelContainer2/VBoxContainer/HBoxContainer" instance=ExtResource("2_3i65a")]
 layout_mode = 2
 size_flags_horizontal = 6
+PortraitName = "Palla"
+Description = "A snarky woman. Hates humanity.
+ + Calm and composed
+ - Takes creative liberty with letters"
 
 [node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/PanelContainer2/VBoxContainer"]
 layout_mode = 2

@@ -4,13 +4,12 @@ using System;
 
 public partial class PortraitController : Node
 {
-    [Export]
-    public Dictionary<string, Texture> Portraits;
+    public static Dictionary<string, Texture2D> Portraits;
 
     public override void _Ready()
     {
         base._Ready();
-        Portraits = new Dictionary<string, Texture>();
+        Portraits = new Dictionary<string, Texture2D>();
         using var dir = DirAccess.Open("res://AllPortraits");
         if (dir != null)
         {
@@ -22,9 +21,7 @@ public partial class PortraitController : Node
                 {
                     string name = fileName.Substring(0, fileName.LastIndexOf("."));
                     GD.Print(name);
-                    Image image = new Image();
-                    image.Load(fileName);
-                    ImageTexture texture = ImageTexture.CreateFromImage(image);
+                    Texture2D texture = ResourceLoader.Load<CompressedTexture2D>("res://AllPortraits/" + fileName);
                     Portraits.Add(name, texture);
                 }
                 fileName = dir.GetNext();
@@ -34,5 +31,6 @@ public partial class PortraitController : Node
         {
             GD.Print("An error occurred when trying to access the path.");
         }
+        GD.Print("Success!");
     }
 }

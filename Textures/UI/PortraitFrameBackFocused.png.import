@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dsm2ekpg3o60c"
-path="res://.godot/imported/PortraitFrame.png-58176178bc7e43b58b8c7346596d550f.ctex"
+uid="uid://7aigxbtb0jb2"
+path="res://.godot/imported/PortraitFrameBackFocused.png-5244993544654a72036bb1c2529f9f82.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/PortraitFrame.png"
-dest_files=["res://.godot/imported/PortraitFrame.png-58176178bc7e43b58b8c7346596d550f.ctex"]
+source_file="res://Textures/UI/PortraitFrameBackFocused.png"
+dest_files=["res://.godot/imported/PortraitFrameBackFocused.png-5244993544654a72036bb1c2529f9f82.ctex"]
 
 [params]
 

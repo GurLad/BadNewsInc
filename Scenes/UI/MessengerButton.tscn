@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://dd3luckalopwu"]
+[gd_scene load_steps=6 format=3 uid="uid://bwruk0k777k8n"]
 
-[ext_resource type="Texture2D" uid="uid://dujfnagjrh127" path="res://Textures/PortraitFrameBack.png" id="1_7ndjr"]
+[ext_resource type="Script" path="res://Scripts/MessengerButton.cs" id="1_watuy"]
 [ext_resource type="Texture2D" uid="uid://doq841h76mtq6" path="res://Textures/Faces/Messengers/Palla/Palla.png" id="2_42ler"]
+[ext_resource type="Texture2D" uid="uid://dujfnagjrh127" path="res://Textures/UI/PortraitFrameBack.png" id="2_sm7tx"]
+[ext_resource type="Texture2D" uid="uid://cwy8uneh3t5fw" path="res://Textures/UI/PortraitFrameBackPressed.png" id="3_v6uqw"]
+[ext_resource type="Texture2D" uid="uid://7aigxbtb0jb2" path="res://Textures/UI/PortraitFrameBackFocused.png" id="4_fi23d"]
 
 [node name="MessengerButton" type="VBoxContainer"]
 anchors_preset = 15
@@ -9,12 +12,16 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_watuy")
 
-[node name="TextureButton" type="TextureButton" parent="."]
+[node name="Button" type="TextureButton" parent="."]
 layout_mode = 2
-texture_normal = ExtResource("1_7ndjr")
+texture_normal = ExtResource("2_sm7tx")
+texture_pressed = ExtResource("3_v6uqw")
+texture_hover = ExtResource("4_fi23d")
+texture_focused = ExtResource("3_v6uqw")
 
-[node name="TextureRect" type="TextureRect" parent="TextureButton"]
+[node name="Holder" type="TextureRect" parent="Button"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -29,7 +36,7 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_42ler")
 
-[node name="Label" type="Label" parent="."]
+[node name="Name" type="Label" parent="."]
 layout_mode = 2
 text = "Name"
 horizontal_alignment = 1
