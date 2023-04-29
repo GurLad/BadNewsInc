@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://cy6lw6vfq74xa"]
+[gd_scene load_steps=5 format=3 uid="uid://cy6lw6vfq74xa"]
 
+[ext_resource type="Script" path="res://Scripts/Preparations.cs" id="1_8cqlr"]
 [ext_resource type="PackedScene" uid="uid://d008ba8mgw1yq" path="res://Scenes/UI/Portrait.tscn" id="1_wdjx0"]
 [ext_resource type="PackedScene" uid="uid://bwruk0k777k8n" path="res://Scenes/UI/MessengerButton.tscn" id="2_3i65a"]
+[ext_resource type="Script" path="res://Scripts/MessengerSelect.cs" id="3_t7j3s"]
 
 [node name="Preparations" type="Control"]
 layout_mode = 3
@@ -10,6 +12,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_8cqlr")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 layout_mode = 1
@@ -39,82 +42,84 @@ Name"
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="PanelContainer" type="PanelContainer" parent="HBoxContainer/VBoxContainer"]
+[node name="TargetPanel" type="PanelContainer" parent="HBoxContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/VBoxContainer/PanelContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/VBoxContainer/TargetPanel"]
 layout_mode = 2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/VBoxContainer/TargetPanel/VBoxContainer"]
 layout_mode = 2
 
-[node name="Portrait" parent="HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer" instance=ExtResource("1_wdjx0")]
+[node name="Portrait" parent="HBoxContainer/VBoxContainer/TargetPanel/VBoxContainer/HBoxContainer" instance=ExtResource("1_wdjx0")]
 layout_mode = 2
 DefaultName = "Luke"
 
-[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer"]
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/TargetPanel/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 text = "Name"
 
-[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer"]
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/TargetPanel/VBoxContainer"]
 layout_mode = 2
 text = "Description
 with
 4
 lines."
 
-[node name="PanelContainer2" type="PanelContainer" parent="HBoxContainer/VBoxContainer"]
+[node name="MessengerPanel" type="PanelContainer" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+script = ExtResource("3_t7j3s")
+Buttons = Array[NodePath]([NodePath("VBoxContainer/HBoxContainer/Luke"), NodePath("VBoxContainer/HBoxContainer/Flake"), NodePath("VBoxContainer/HBoxContainer/Palla")])
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/VBoxContainer/MessengerPanel"]
 layout_mode = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/VBoxContainer/PanelContainer2"]
+[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/VBoxContainer/MessengerPanel/VBoxContainer"]
 layout_mode = 2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/VBoxContainer/PanelContainer2/VBoxContainer"]
-layout_mode = 2
-
-[node name="Luke" parent="HBoxContainer/VBoxContainer/PanelContainer2/VBoxContainer/HBoxContainer" instance=ExtResource("2_3i65a")]
+[node name="Luke" parent="HBoxContainer/VBoxContainer/MessengerPanel/VBoxContainer/HBoxContainer" instance=ExtResource("2_3i65a")]
 layout_mode = 2
 size_flags_horizontal = 6
 PortraitName = "Luke"
 Description = "A nice child. Not very intelligent.
- + Cute
- - Doesn't understand complex words."
+ - Cute
+ - Doesn't understand complex words"
 
-[node name="Flake" parent="HBoxContainer/VBoxContainer/PanelContainer2/VBoxContainer/HBoxContainer" instance=ExtResource("2_3i65a")]
+[node name="Flake" parent="HBoxContainer/VBoxContainer/MessengerPanel/VBoxContainer/HBoxContainer" instance=ExtResource("2_3i65a")]
 layout_mode = 2
 size_flags_horizontal = 6
 PortraitName = "Flake"
 Description = "A bombastic and loud man. Loves shouting.
- + Very enthusiastic and charismatic
+ - Very enthusiastic and charismatic
  - Has zero tact"
 
-[node name="Palla" parent="HBoxContainer/VBoxContainer/PanelContainer2/VBoxContainer/HBoxContainer" instance=ExtResource("2_3i65a")]
+[node name="Palla" parent="HBoxContainer/VBoxContainer/MessengerPanel/VBoxContainer/HBoxContainer" instance=ExtResource("2_3i65a")]
 layout_mode = 2
 size_flags_horizontal = 6
 PortraitName = "Palla"
-Description = "A snarky woman. Hates humanity.
- + Calm and composed
+Description = "A sarcastic woman. Hates humanity.
+ - Calm and composed
  - Takes creative liberty with letters"
 
-[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/PanelContainer2/VBoxContainer"]
+[node name="Description" type="Label" parent="HBoxContainer/VBoxContainer/MessengerPanel/VBoxContainer"]
 layout_mode = 2
 text = "Description
 with 3
 lines."
 
-[node name="PanelContainer4" type="PanelContainer" parent="HBoxContainer/VBoxContainer"]
+[node name="SendPanel" type="PanelContainer" parent="HBoxContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/VBoxContainer/PanelContainer4"]
+[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/VBoxContainer/SendPanel"]
 layout_mode = 2
 
-[node name="Button" type="Button" parent="HBoxContainer/VBoxContainer/PanelContainer4/HBoxContainer"]
+[node name="Send" type="Button" parent="HBoxContainer/VBoxContainer/SendPanel/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "Send"
 
-[node name="Button2" type="Button" parent="HBoxContainer/VBoxContainer/PanelContainer4/HBoxContainer"]
+[node name="Preview" type="Button" parent="HBoxContainer/VBoxContainer/SendPanel/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "Preview"
