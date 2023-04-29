@@ -28,3 +28,4 @@ layout_mode = 2
 
 [node name="Messenger" parent="Control/VBoxContainer" instance=ExtResource("1_g2u53")]
 layout_mode = 2
+Left = true

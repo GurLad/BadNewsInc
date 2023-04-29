@@ -16,10 +16,18 @@ public partial class Battle : Node
     public override void _Ready()
     {
         base._Ready();
-        messenger = GetNode<SpeakingPortrait>("VBoxContainer/Messenger");
-        target = GetNode<SpeakingPortrait>("VBoxContainer/Target");
+        messenger = GetNode<SpeakingPortrait>("Control/VBoxContainer/Messenger");
+        target = GetNode<SpeakingPortrait>("Control/VBoxContainer/Target");
+        messenger.PortraitName = CurrentMessenger.IntToMessengerName();
+        target.PortraitName = CurrentLetter switch // Hardcoding FTW
+        {
+            0 => "Esther",
+            _ => "Palla"
+        };
         target.VASuffix = CurrentMessenger.IntToMessengerName();
-        lines = ResourceLoader.Load<string>("res://Letters/Letter" + (CurrentLetter + 1) + ".txt").GetLineParts(2 + CurrentMessenger);
+        using var file = FileAccess.Open("res://Letters/Letter" + (CurrentLetter + 1) + ".txt", FileAccess.ModeFlags.Read);
+        string content = file.GetAsText();
+        lines = content.GetLineParts(2 + CurrentMessenger);
         PlayNextLine();
     }
 
@@ -40,6 +48,7 @@ public partial class Battle : Node
             QueueFree();
         }
         string targetLine = lines[currentLine++];
+        GD.Print("Line is " + targetLine);
         if (targetLine == "DEATH")
         {
             // Go to game over TBA
@@ -50,11 +59,11 @@ public partial class Battle : Node
             string[] parts = targetLine.Split(":");
             if (parts[0].MessengerNameToInt() >= 0)
             {
-                target.PlayNext(parts[0], targetLine.Substring(targetLine.IndexOf(":") + 1));
+                messenger.PlayNext(parts[0], targetLine.Substring(targetLine.IndexOf(":") + 1));
             }
             else
             {
-                messenger.PlayNext(parts[1], targetLine.Substring(targetLine.IndexOf(":") + 1));
+                target.PlayNext(parts[0], targetLine.Substring(targetLine.IndexOf(":") + 1));
             }
         }
     }

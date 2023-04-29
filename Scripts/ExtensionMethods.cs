@@ -30,8 +30,8 @@ public static class ExtensionMethods
     public static List<string> GetLineParts(this string source, int part)
     {
         string[] mainParts = source.Split('~');
-        List<string> finalParts = mainParts[part].Split('\n').ToList();
-        finalParts = finalParts.Where(a => a != "").ToList();
+        List<string> finalParts = mainParts[part].Replace("\r", "").Split('\n').ToList();
+        finalParts = finalParts.Where(a => a.Length > 0).ToList();
         return finalParts;
     }
 }
