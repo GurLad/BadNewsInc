@@ -1,0 +1,6 @@
+Luke:
+Pitch 40%
+Flake:
+Pitch -10%
+Palla:
+Pitch 20%
