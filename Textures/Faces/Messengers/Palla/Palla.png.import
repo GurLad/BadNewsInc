@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cudedglxjmu3u"
-path="res://.godot/imported/PallaSpeak1.png-3f3f89558890037cda33b544f75055ef.ctex"
+uid="uid://doq841h76mtq6"
+path="res://.godot/imported/Palla.png-7cf86e47a5a649f776aa43dc9d8d4d1f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Faces/Messengers/Palla/PallaSpeak1.png"
-dest_files=["res://.godot/imported/PallaSpeak1.png-3f3f89558890037cda33b544f75055ef.ctex"]
+source_file="res://Textures/Faces/Messengers/Palla/Palla.png"
+dest_files=["res://.godot/imported/Palla.png-7cf86e47a5a649f776aa43dc9d8d4d1f.ctex"]
 
 [params]
 

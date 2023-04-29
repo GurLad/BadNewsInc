@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://doq841h76mtq6"
-path="res://.godot/imported/Palla.png-f34a6fc59c3086b9d1a04556ab9c60e0.ctex"
+uid="uid://b15pjrwprr6bw"
+path="res://.godot/imported/PortraitFrameBack.png-1b667ab61dba55a286a83eb311d2f9aa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Faces/Messengers/Palla/Palla.png"
-dest_files=["res://.godot/imported/Palla.png-f34a6fc59c3086b9d1a04556ab9c60e0.ctex"]
+source_file="res://Textures/PortraitFrameBack.png"
+dest_files=["res://.godot/imported/PortraitFrameBack.png-1b667ab61dba55a286a83eb311d2f9aa.ctex"]
 
 [params]
 

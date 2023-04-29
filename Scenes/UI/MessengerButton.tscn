@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=3 uid="uid://dd3luckalopwu"]
+
+[ext_resource type="Texture2D" uid="uid://b15pjrwprr6bw" path="res://Textures/PortraitFrameBack.png" id="1_7ndjr"]
+[ext_resource type="Texture2D" uid="uid://doq841h76mtq6" path="res://Textures/Faces/Messengers/Palla/Palla.png" id="2_42ler"]
+
+[node name="MessengerButton" type="VBoxContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 2
+texture_normal = ExtResource("1_7ndjr")
+
+[node name="TextureRect" type="TextureRect" parent="TextureButton"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_42ler")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+text = "Name"
+horizontal_alignment = 1

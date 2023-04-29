@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c8oap52dfbvsf"
-path="res://.godot/imported/Luke.png-ccc7b98c483e62ff50a215beb097d8b9.ctex"
+uid="uid://dvk581avm5xdy"
+path="res://.godot/imported/LukeSpeak2.png-f87e2f8125005a39d8de108a37dad977.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Faces/Messengers/Luke/Luke.png"
-dest_files=["res://.godot/imported/Luke.png-ccc7b98c483e62ff50a215beb097d8b9.ctex"]
+source_file="res://Textures/Faces/Messengers/Luke/LukeSpeak2.png"
+dest_files=["res://.godot/imported/LukeSpeak2.png-f87e2f8125005a39d8de108a37dad977.ctex"]
 
 [params]
 

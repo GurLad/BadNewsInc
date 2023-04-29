@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://bxg6od4r2eiyp"]
+
+[ext_resource type="Texture2D" uid="uid://doq841h76mtq6" path="res://Textures/Faces/Messengers/Palla/Palla.png" id="1_8xqn6"]
+[ext_resource type="Texture2D" uid="uid://b15pjrwprr6bw" path="res://Textures/PortraitFrameBack.png" id="1_iic64"]
+
+[node name="Portrait" type="TextureRect"]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_iic64")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_8xqn6")
