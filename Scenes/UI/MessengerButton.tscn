@@ -16,10 +16,12 @@ script = ExtResource("1_watuy")
 
 [node name="Button" type="TextureButton" parent="."]
 layout_mode = 2
+focus_mode = 0
 texture_normal = ExtResource("2_sm7tx")
 texture_pressed = ExtResource("3_v6uqw")
 texture_hover = ExtResource("4_fi23d")
-texture_focused = ExtResource("3_v6uqw")
+texture_disabled = ExtResource("3_v6uqw")
+texture_focused = ExtResource("2_sm7tx")
 
 [node name="Holder" type="TextureRect" parent="Button"]
 layout_mode = 1
