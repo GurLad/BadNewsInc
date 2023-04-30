@@ -41,7 +41,14 @@ public partial class Battle : Node
     {
         if (currentLine >= lines.Count)
         {
-            Main.Current.ToPreperations(CurrentLetter + 1, "Day " + (CurrentLetter + 2));
+            if (CurrentLetter < 3) // num of letters
+            {
+                Main.Current.ToPreperations(CurrentLetter + 1, "Day " + (CurrentLetter + 2));
+            }
+            else
+            {
+                Main.Current.ToFinishGame();
+            }
             QueueFree();
             return;
         }

@@ -7,7 +7,8 @@ Therefore, please accept this letter as my official resignation, effective today
 May your bad days be the best days,
 You
 ~Vance
-Your boss from the intro. You do remember the intro, right? Anyway, you don't know much else. And why are even you talking to yourself? - You
+Your boss from the intro. You do remember the intro, right? Anyway, you don't know much else. And why are even you talking to yourself?
+ - You
 ~
 Luke: Dear Vance,
 Vance: Oh? A letter for me? It's good news, right?
@@ -18,7 +19,7 @@ Vance|Laugh: Oh, what a pretty thank you letter! You really made my day here!
 Luke: However, I no longer feel comfortable gambling on the life of my co-workers every day.
 Vance|Serious: What do you mean?
 Luke: Also, I don't enjoy working for free.
-Vance|Angry: It's not my fault we're bankrupt.
+Vance|Angry: It's not my fault that we're bankrupt.
 Luke: Therefore, please accept this letter as my official resignation, effective today.
 Vance|Seething: R-r-resignation?!
 Vance|Seething: No! No, you can't resign! I don't have any way to replace you!
@@ -36,7 +37,7 @@ Vance|Laugh: Oh, what a pretty thank you letter! You really made my day here!
 Flake: However, I no longer feel comfortable gambling on the life of my co-workers every day.
 Vance|Serious: What do you mean?
 Flake: Also, I don't enjoy working for free.
-Vance|Angry: It's not my fault we're bankrupt.
+Vance|Angry: It's not my fault that we're bankrupt.
 Flake: Therefore, please accept this letter as my official resignation, effective today.
 Vance|Seething: R-r-resignation?!
 Vance|Seething: No! No, you can't resign! I don't have any way to replace you!
@@ -47,7 +48,7 @@ Vance|Seething: Noooooooo!
 ~
 Palla: Dear Vance,
 Vance: Oh? A letter for me? It's good news, right?
-Palla: I appreciate the job opportunity you gave me.
+Palla: I appreciate the job opportunity you gave me. But I resign.
 Vance: Why, thank-
 Vance|Angry: Wait, resign?!
 Palla: I learned so much from it, and it was quite unlike any other job I ever had.

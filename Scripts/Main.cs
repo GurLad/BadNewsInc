@@ -3,6 +3,7 @@ using System;
 
 public partial class Main : Node
 {
+    private const string PATH = "user://finishedGame.save";
     public static Main Current;
     [Export]
     public PackedScene PreperationsScene;
@@ -36,7 +37,7 @@ public partial class Main : Node
         {
             if (eventKey.Pressed && eventKey.Keycode == Key.F11)
             {
-                DisplayServer.WindowSetMode(DisplayServer.WindowGetMode() == DisplayServer.WindowMode.Fullscreen ? DisplayServer.WindowMode.Windowed : DisplayServer.WindowMode.Fullscreen);
+                DisplayServer.WindowSetMode(DisplayServer.WindowGetMode() == DisplayServer.WindowMode.ExclusiveFullscreen ? DisplayServer.WindowMode.Windowed : DisplayServer.WindowMode.ExclusiveFullscreen);
             }
         }
     }
@@ -80,6 +81,21 @@ public partial class Main : Node
         newTransition.PostAction = () =>
         {
             AddChild(IntroScene.Instantiate<Intro>());
+        };
+        AddChild(newTransition);
+    }
+
+    public void ToFinishGame()
+    {
+        // Save
+        var file = FileAccess.Open(PATH, FileAccess.ModeFlags.Write);
+        file.StoreString("Yay random person beat the game, congrats");
+        // Transition
+        Transition newTransition = Transition.Instantiate<Transition>();
+        newTransition.Display = "Fin";
+        newTransition.PostAction = () =>
+        {
+            AddChild(MenuScene.Instantiate<MainMenu>());
         };
         AddChild(newTransition);
     }

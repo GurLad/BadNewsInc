@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://cy6lw6vfq74xa"]
+[gd_scene load_steps=7 format=3 uid="uid://cy6lw6vfq74xa"]
 
 [ext_resource type="Script" path="res://Scripts/Preparations.cs" id="1_8cqlr"]
 [ext_resource type="PackedScene" uid="uid://d008ba8mgw1yq" path="res://Scenes/UI/Portrait.tscn" id="1_wdjx0"]
 [ext_resource type="FontFile" uid="uid://dg6kcl5rtsf6c" path="res://Fonts/OldWizard.ttf" id="2_2eac8"]
 [ext_resource type="PackedScene" uid="uid://bwruk0k777k8n" path="res://Scenes/UI/MessengerButton.tscn" id="2_3i65a"]
 [ext_resource type="Script" path="res://Scripts/MessengerSelect.cs" id="3_t7j3s"]
+[ext_resource type="Script" path="res://Scripts/Day1Button.cs" id="6_4tnnf"]
 
 [node name="Preparations" type="Control"]
 layout_mode = 3
@@ -128,11 +129,11 @@ focus_mode = 0
 text = "Send"
 
 [node name="Preview" type="Button" parent="HBoxContainer/VBoxContainer/SendPanel/HBoxContainer"]
-visible = false
 layout_mode = 2
 size_flags_horizontal = 3
 focus_mode = 0
 text = "Preview"
+script = ExtResource("6_4tnnf")
 
 [node name="PreviewPlayer" type="AudioStreamPlayer" parent="."]
 
