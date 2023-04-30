@@ -7,7 +7,8 @@ public partial class Transition : Control
     public string Display;
     public Action PostAction;
     private Label text;
-    private Timer prePostTimer;
+    private Timer preTimer;
+    private Timer postTimer;
     private Timer textTimer;
     private State state = State.PreText;
 
@@ -15,9 +16,10 @@ public partial class Transition : Control
     {
         base._Ready();
         text = GetNode<Label>("CenterContainer/Text");
-        prePostTimer = GetNode<Timer>("PrePostTimer");
+        preTimer = GetNode<Timer>("PreTimer");
+        postTimer = GetNode<Timer>("PostTimer");
         textTimer = GetNode<Timer>("TextTimer");
-        prePostTimer.Start();
+        preTimer.Start();
     }
 
     public override void _Process(double delta)
@@ -26,7 +28,7 @@ public partial class Transition : Control
         switch (state)
         {
             case State.PreText:
-                if (prePostTimer.TimeLeft <= 0)
+                if (preTimer.TimeLeft <= 0)
                 {
                     text.Text = Display;
                     // TBA play SFX
@@ -39,12 +41,12 @@ public partial class Transition : Control
                 {
                     text.Text = "";
                     // TBA play SFX
-                    prePostTimer.Start();
+                    postTimer.Start();
                     state = State.PostText;
                 }
                 break;
             case State.PostText:
-                if (prePostTimer.TimeLeft <= 0)
+                if (postTimer.TimeLeft <= 0)
                 {
                     PostAction();
                     QueueFree();

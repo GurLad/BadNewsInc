@@ -67,4 +67,22 @@ public partial class Battle : Node
             }
         }
     }
+
+    public void Next()
+    {
+        if (!messenger.Idle)
+        {
+            messenger.Stop();
+        }
+        if (!target.Idle)
+        {
+            target.Stop();
+        }
+    }
+
+    public void Restart()
+    {
+        Main.Current.ToPreperations(CurrentLetter, "Day " + (CurrentLetter + 1));
+        QueueFree();
+    }
 }

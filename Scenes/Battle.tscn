@@ -23,9 +23,26 @@ anchor_bottom = 0.5
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="Next" type="Button" parent="Control/VBoxContainer"]
+custom_minimum_size = Vector2(97, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+focus_mode = 0
+text = "Next"
+
 [node name="Target" parent="Control/VBoxContainer" instance=ExtResource("1_g2u53")]
 layout_mode = 2
 
 [node name="Messenger" parent="Control/VBoxContainer" instance=ExtResource("1_g2u53")]
 layout_mode = 2
 Left = true
+
+[node name="Restart" type="Button" parent="Control/VBoxContainer"]
+custom_minimum_size = Vector2(97, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+focus_mode = 0
+text = "Abort"
+
+[connection signal="pressed" from="Control/VBoxContainer/Next" to="." method="Next"]
+[connection signal="pressed" from="Control/VBoxContainer/Restart" to="." method="Restart"]

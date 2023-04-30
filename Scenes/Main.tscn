@@ -1,16 +1,22 @@
-[gd_scene load_steps=6 format=3 uid="uid://b4ctxdp3try76"]
+[gd_scene load_steps=7 format=3 uid="uid://b4ctxdp3try76"]
 
 [ext_resource type="Script" path="res://Scripts/Main.cs" id="1_7b70s"]
 [ext_resource type="Texture2D" uid="uid://cf4etdlkrss2b" path="res://Textures/UI/Background.png" id="2_3kilm"]
 [ext_resource type="PackedScene" uid="uid://cy6lw6vfq74xa" path="res://Scenes/Preparations.tscn" id="2_jmfp3"]
 [ext_resource type="PackedScene" uid="uid://dh8t5md7bgfyn" path="res://Scenes/Battle.tscn" id="3_4rt0x"]
 [ext_resource type="PackedScene" uid="uid://bkq25vxfhbr0h" path="res://Scenes/Transition.tscn" id="4_sc45n"]
+[ext_resource type="AudioStream" uid="uid://dcdjy3vifueoi" path="res://Music/CalmNews.mp3" id="5_0fo3n"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_7b70s")
 PreperationsScene = ExtResource("2_jmfp3")
 BattleScene = ExtResource("3_4rt0x")
 Transition = ExtResource("4_sc45n")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_0fo3n")
+volume_db = -15.0
+autoplay = true
 
 [node name="Background" type="Control" parent="."]
 layout_mode = 3

@@ -83,4 +83,12 @@ public partial class SpeakingPortrait : PanelContainer // Tons of copy-past from
             beganDelay = false;
         }
     }
+
+    public void Stop()
+    {
+        player.Stop();
+        midSpeakAnimator.Stop();
+        beganDelay = true;
+        portrait.Load(FullName);
+    }
 }
