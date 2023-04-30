@@ -28,10 +28,10 @@ public partial class Transition : Control
         switch (state)
         {
             case State.PreText:
-                if (preTimer.TimeLeft <= 0)
+                if (preTimer.TimeLeft <= 0 && !Main.Current.PlayingSFX())
                 {
                     text.Text = Display;
-                    // TBA play SFX
+                    Main.Current.PlaySFX("NewDay");
                     textTimer.Start();
                     state = State.Text;
                 }
@@ -40,7 +40,6 @@ public partial class Transition : Control
                 if (textTimer.TimeLeft <= 0)
                 {
                     text.Text = "";
-                    // TBA play SFX
                     postTimer.Start();
                     state = State.PostText;
                 }

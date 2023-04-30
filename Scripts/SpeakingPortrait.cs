@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public partial class SpeakingPortrait : PanelContainer // Tons of copy-past from preparation...
+public partial class SpeakingPortrait : Container // Tons of copy-past from preparation...
 {
     [Export]
     public bool Left;

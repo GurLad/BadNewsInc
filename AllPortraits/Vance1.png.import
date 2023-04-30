@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b3xe8t4jq3nog"
-path="res://.godot/imported/Boss1.png-f7ba6bc2f2f5b5f31ea022c8a36602eb.ctex"
+uid="uid://dhjbaqonk3x5e"
+path="res://.godot/imported/Vance1.png-cc17828f4e3186a5d0435c6664949469.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AllPortraits/Boss1.png"
-dest_files=["res://.godot/imported/Boss1.png-f7ba6bc2f2f5b5f31ea022c8a36602eb.ctex"]
+source_file="res://AllPortraits/Vance1.png"
+dest_files=["res://.godot/imported/Vance1.png-cc17828f4e3186a5d0435c6664949469.ctex"]
 
 [params]
 

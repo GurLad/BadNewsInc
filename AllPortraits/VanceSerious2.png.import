@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://n50ima0jr0h8"
-path="res://.godot/imported/BossSerious2.png-ef9a01114e3a5f0e40963cf5fdf4c3ec.ctex"
+uid="uid://dm1owp8nq77vd"
+path="res://.godot/imported/VanceSerious2.png-cfa0a7ea2704c5528af96bdffa765f34.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AllPortraits/BossSerious2.png"
-dest_files=["res://.godot/imported/BossSerious2.png-ef9a01114e3a5f0e40963cf5fdf4c3ec.ctex"]
+source_file="res://AllPortraits/VanceSerious2.png"
+dest_files=["res://.godot/imported/VanceSerious2.png-cfa0a7ea2704c5528af96bdffa765f34.ctex"]
 
 [params]
 

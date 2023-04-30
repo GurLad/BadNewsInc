@@ -8,3 +8,5 @@ Esther:
 Speed 30%
 Robert:
 Speed -30%
+Vence:
+Pitch -5%

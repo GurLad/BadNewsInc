@@ -11,11 +11,21 @@ public partial class Main : Node
     [Export]
     public PackedScene MenuScene;
     [Export]
+    public PackedScene IntroScene;
+    [Export]
     public PackedScene Transition;
+    [Export]
+    public Godot.Collections.Dictionary<string, AudioStream> SFX;
+    [Export]
+    public Godot.Collections.Dictionary<string, AudioStream> Musics;
+    private AudioStreamPlayer sfxPlayer;
+    private AudioStreamPlayer musicPlayer;
 
     public override void _Ready()
     {
         base._Ready();
+        sfxPlayer = GetNode<AudioStreamPlayer>("SFXPlayer");
+        musicPlayer = GetNode<AudioStreamPlayer>("MusicPlayer");
         Current = this;
         ToMenu();
     }
@@ -61,5 +71,34 @@ public partial class Main : Node
     public void ToMenu()
     {
         AddChild(MenuScene.Instantiate<MainMenu>());
+    }
+
+    public void ToIntro()
+    {
+        Transition newTransition = Transition.Instantiate<Transition>();
+        newTransition.Display = "You arrive";
+        newTransition.PostAction = () =>
+        {
+            AddChild(IntroScene.Instantiate<Intro>());
+        };
+        AddChild(newTransition);
+    }
+
+    public void PlaySFX(string name)
+    {
+        //GD.Print(name + ", there are " + string.Join(",", SFX.Keys));
+        sfxPlayer.Stream = SFX[name];
+        sfxPlayer.Play();
+    }
+
+    public bool PlayingSFX()
+    {
+        return sfxPlayer.Playing;
+    }
+
+    public void PlayMusic(string name)
+    {
+        musicPlayer.Stream = Musics[name];
+        musicPlayer.Play();
     }
 }

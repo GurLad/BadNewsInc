@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://b4ctxdp3try76"]
+[gd_scene load_steps=10 format=3 uid="uid://b4ctxdp3try76"]
 
 [ext_resource type="Script" path="res://Scripts/Main.cs" id="1_7b70s"]
 [ext_resource type="PackedScene" uid="uid://cy6lw6vfq74xa" path="res://Scenes/Preparations.tscn" id="2_jmfp3"]
@@ -6,15 +6,25 @@
 [ext_resource type="PackedScene" uid="uid://3g21ujhcs3u3" path="res://Scenes/Menu.tscn" id="4_anjte"]
 [ext_resource type="PackedScene" uid="uid://bkq25vxfhbr0h" path="res://Scenes/Transition.tscn" id="4_sc45n"]
 [ext_resource type="AudioStream" uid="uid://dcdjy3vifueoi" path="res://Music/CalmNews.mp3" id="5_0fo3n"]
+[ext_resource type="PackedScene" uid="uid://bhlpoqwt3iilg" path="res://Scenes/Intro.tscn" id="5_dwgmx"]
+[ext_resource type="AudioStream" uid="uid://c0c3go6ejwalc" path="res://SFX/Gunshot.mp3" id="6_lhvd2"]
+[ext_resource type="AudioStream" uid="uid://7qvhvisifdow" path="res://SFX/NewDay.mp3" id="7_6ql7o"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_7b70s")
 PreperationsScene = ExtResource("2_jmfp3")
 BattleScene = ExtResource("3_4rt0x")
 MenuScene = ExtResource("4_anjte")
+IntroScene = ExtResource("5_dwgmx")
 Transition = ExtResource("4_sc45n")
+SFX = {
+"Gunshot": ExtResource("6_lhvd2"),
+"NewDay": ExtResource("7_6ql7o")
+}
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="SFXPlayer" type="AudioStreamPlayer" parent="."]
+
+[node name="MusicPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_0fo3n")
 volume_db = -15.0
 autoplay = true

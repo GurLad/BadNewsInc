@@ -49,6 +49,7 @@ public partial class Battle : Node
         GD.Print("Line is " + targetLine);
         if (targetLine == "DEATH")
         {
+            Main.Current.PlaySFX("Gunshot");
             Main.Current.ToPreperations(CurrentLetter, "Game Over");
             QueueFree();
         }
