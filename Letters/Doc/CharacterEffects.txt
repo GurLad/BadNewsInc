@@ -10,3 +10,5 @@ Robert:
 Speed -30%
 Vence:
 Pitch -5%
+Finm:
+Pitch 30%
