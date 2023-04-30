@@ -6,17 +6,12 @@
 [ext_resource type="Texture2D" uid="uid://ckkt237p0r7nn" path="res://Textures/UI/ButtonHover.png" id="3_0mwni"]
 [ext_resource type="StyleBox" uid="uid://bht1iotrrkyu3" path="res://Theme/ButtonBox.tres" id="4_ah585"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_evsqo"]
-content_margin_left = 4.0
-content_margin_top = 4.0
-content_margin_right = 4.0
-content_margin_bottom = 4.0
-bg_color = Color(0.1, 0.1, 0.1, 0.3)
-corner_radius_top_left = 3
-corner_radius_top_right = 3
-corner_radius_bottom_right = 3
-corner_radius_bottom_left = 3
-corner_detail = 5
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qteer"]
+texture = ExtResource("2_gw8f7")
+texture_margin_left = 8.0
+texture_margin_top = 8.0
+texture_margin_right = 8.0
+texture_margin_bottom = 8.0
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ry3kk"]
 texture = ExtResource("2_gw8f7")
@@ -43,7 +38,7 @@ texture_margin_bottom = 8.0
 
 [resource]
 Button/colors/font_color = Color(0.0784314, 0.0784314, 0.0784314, 1)
-Button/colors/font_disabled_color = Color(0.875, 0.875, 0.875, 0.5)
+Button/colors/font_disabled_color = Color(0, 0, 0, 0.498039)
 Button/colors/font_focus_color = Color(0.0196078, 0.0196078, 0.0196078, 1)
 Button/colors/font_hover_color = Color(0.0196078, 0.0196078, 0.0196078, 1)
 Button/colors/font_hover_pressed_color = Color(0, 0, 0, 1)
@@ -59,7 +54,7 @@ Button/constants/h_separation = 2
 Button/constants/outline_size = 0
 Button/font_sizes/font_size = 16
 Button/fonts/font = ExtResource("1_dul4s")
-Button/styles/disabled = SubResource("StyleBoxFlat_evsqo")
+Button/styles/disabled = SubResource("StyleBoxTexture_qteer")
 Button/styles/focus = SubResource("StyleBoxTexture_ry3kk")
 Button/styles/hover = SubResource("StyleBoxTexture_nenhy")
 Button/styles/normal = ExtResource("4_ah585")

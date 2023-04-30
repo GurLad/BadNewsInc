@@ -2,6 +2,7 @@
 .import/
 .godot/
 .vs/
+Builds/
 export.cfg
 export_presets.cfg
 

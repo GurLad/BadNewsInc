@@ -126,6 +126,7 @@ layout_mode = 2
 layout_mode = 2
 size_flags_horizontal = 3
 focus_mode = 0
+disabled = true
 text = "Send"
 
 [node name="Preview" type="Button" parent="HBoxContainer/VBoxContainer/SendPanel/HBoxContainer"]
