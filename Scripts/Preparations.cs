@@ -12,6 +12,7 @@ public partial class Preparations : Control
     private Label letterText;
     private Label targetName;
     private Label targetDescription;
+    private Portrait targetPortrait;
     private bool beganDelay = false;
     private int currentPlaying = -1;
 
@@ -21,15 +22,16 @@ public partial class Preparations : Control
         player = GetNode<AudioStreamPlayer>("PreviewPlayer");
         messengerSelect = GetNode<MessengerSelect>("HBoxContainer/VBoxContainer/MessengerPanel");
         timer = GetNode<Timer>("VADelay");
-        letterText = GetNode<Label>("HBoxContainer/PanelContainer/HBoxContainer/Letter");
+        letterText = GetNode<Label>("HBoxContainer/PanelContainer/Letter");
         targetName = GetNode<Label>("HBoxContainer/VBoxContainer/TargetPanel/VBoxContainer/HBoxContainer/Name");
         targetDescription = GetNode<Label>("HBoxContainer/VBoxContainer/TargetPanel/VBoxContainer/Description");
+        targetPortrait = GetNode<Portrait>("HBoxContainer/VBoxContainer/TargetPanel/VBoxContainer/HBoxContainer/Portrait");
         // Copy paste again!
         using var file = FileAccess.Open("res://Letters/Letter" + (CurrentLetter + 1) + ".txt", FileAccess.ModeFlags.Read);
         string content = file.GetAsText();
         letterText.Text = string.Join("\n", content.GetLineParts(0));
         List<string> targetLines = content.GetLineParts(1);
-        targetName.Text = targetLines[0];
+        targetPortrait.Load(targetName.Text = targetLines[0]);
         targetLines.RemoveAt(0);
         GD.Print(string.Join("\n", targetLines));
         targetDescription.Text = string.Join("\n", targetLines);

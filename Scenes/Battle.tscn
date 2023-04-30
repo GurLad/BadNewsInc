@@ -5,7 +5,6 @@
 
 [node name="Battle" type="Node"]
 script = ExtResource("1_8pyl5")
-CurrentMessenger = 2
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
