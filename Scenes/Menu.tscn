@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://3g21ujhcs3u3"]
+[gd_scene load_steps=5 format=3 uid="uid://3g21ujhcs3u3"]
 
 [ext_resource type="Texture2D" uid="uid://c82x7cbsu6rbq" path="res://Textures/Logo.png" id="1_huc3i"]
 [ext_resource type="Script" path="res://Scripts/MainMenu.cs" id="1_nx8s4"]
 [ext_resource type="Script" path="res://Scripts/Day1Button.cs" id="3_kcmla"]
+[ext_resource type="AudioStream" uid="uid://cpkgtbj1idx6m" path="res://SFX/Title.mp3" id="4_qxobt"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -70,6 +71,10 @@ layout_mode = 2
 size_flags_vertical = 2
 focus_mode = 0
 text = "Quit"
+
+[node name="TitlePlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_qxobt")
+autoplay = true
 
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/Start" to="." method="Start"]
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/Day2Button" to="HBoxContainer/VBoxContainer/Day2Button" method="Click"]
