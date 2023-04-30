@@ -9,7 +9,7 @@ public partial class Transition : Control
     private Label text;
     private Timer prePostTimer;
     private Timer textTimer;
-    private State state;
+    private State state = State.PreText;
 
     public override void _Ready()
     {
@@ -31,6 +31,7 @@ public partial class Transition : Control
                     text.Text = Display;
                     // TBA play SFX
                     textTimer.Start();
+                    state = State.Text;
                 }
                 break;
             case State.Text:
@@ -39,6 +40,7 @@ public partial class Transition : Control
                     text.Text = "";
                     // TBA play SFX
                     prePostTimer.Start();
+                    state = State.PostText;
                 }
                 break;
             case State.PostText:

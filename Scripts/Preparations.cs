@@ -69,4 +69,10 @@ public partial class Preparations : Control
         player.Stop();
         currentPlaying = 0;
     }
+
+    public void GoToBattle()
+    {
+        Main.Current.ToBattle(CurrentLetter, messengerSelect.SelectedMessenger);
+        QueueFree();
+    }
 }

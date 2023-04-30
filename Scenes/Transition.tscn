@@ -34,4 +34,11 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_bky1c")
 theme_override_font_sizes/font_size = 32
-text = "Day 1"
+
+[node name="PrePostTimer" type="Timer" parent="."]
+wait_time = 0.7
+one_shot = true
+
+[node name="TextTimer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true

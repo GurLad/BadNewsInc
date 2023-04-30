@@ -44,14 +44,14 @@ public partial class Battle : Node
     {
         if (currentLine >= lines.Count)
         {
-            // Go to prep TBA
+            Main.Current.ToPreperations(CurrentLetter + 1, "Day " + (CurrentLetter + 2));
             QueueFree();
         }
         string targetLine = lines[currentLine++];
         GD.Print("Line is " + targetLine);
         if (targetLine == "DEATH")
         {
-            // Go to game over TBA
+            Main.Current.ToPreperations(CurrentLetter, "Game Over");
             QueueFree();
         }
         else

@@ -3,6 +3,7 @@ using System;
 
 public partial class Main : Node
 {
+    public static Main Current;
     [Export]
     public PackedScene PreperationsScene;
     [Export]
@@ -13,7 +14,8 @@ public partial class Main : Node
     public override void _Ready()
     {
         base._Ready();
-        PreperationsScene.Instantiate(); // TBA: switch with menu
+        Current = this;
+        ToPreperations(0, "Day 1");
     }
 
     public void ToBattle(int letter, int messenger)
@@ -25,7 +27,9 @@ public partial class Main : Node
             Battle battle = BattleScene.Instantiate<Battle>();
             battle.CurrentLetter = letter;
             battle.CurrentMessenger = messenger;
+            AddChild(battle);
         };
+        AddChild(newTransition);
     }
 
     public void ToPreperations(int letter, string display)
@@ -36,6 +40,8 @@ public partial class Main : Node
         {
             Preparations preparations = PreperationsScene.Instantiate<Preparations>();
             preparations.CurrentLetter = letter;
+            AddChild(preparations);
         };
+        AddChild(newTransition);
     }
 }

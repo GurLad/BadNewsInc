@@ -139,4 +139,5 @@ text = "Preview"
 wait_time = 0.2
 one_shot = true
 
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/SendPanel/HBoxContainer/Send" to="." method="GoToBattle"]
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/SendPanel/HBoxContainer/Preview" to="." method="Preview"]
