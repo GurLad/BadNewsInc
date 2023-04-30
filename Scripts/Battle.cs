@@ -57,11 +57,11 @@ public partial class Battle : Node
             string[] parts = targetLine.Split(":");
             if (parts[0].MessengerNameToInt() >= 0)
             {
-                messenger.PlayNext(parts[0], targetLine.Substring(targetLine.IndexOf(":") + 1));
+                messenger.PlayNext(parts[0], targetLine.Substring(targetLine.IndexOf(":") + 1).Trim());
             }
             else
             {
-                target.PlayNext(parts[0], targetLine.Substring(targetLine.IndexOf(":") + 1));
+                target.PlayNext(parts[0], targetLine.Substring(targetLine.IndexOf(":") + 1).Trim());
             }
         }
     }
