@@ -28,7 +28,7 @@ custom_minimum_size = Vector2(97, 0)
 layout_mode = 2
 size_flags_horizontal = 4
 focus_mode = 0
-text = "Next"
+text = "Fast forward"
 
 [node name="Target" parent="Control/VBoxContainer" instance=ExtResource("1_g2u53")]
 layout_mode = 2

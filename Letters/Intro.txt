@@ -4,7 +4,7 @@ Vance|Serious: Unfortunately, due to recent heavy losses amongst our staff, we o
 Vance: Make sure they stay alive, as we do not have the money to find replacements.
 Vance|Serious: Nor pay you, for that matter. Or them. Or even the beggar across the street.
 Vance: But I'm sure that will not be an issue.
-Vance: Anyway, your first shift begins in two minutes.
+Vance|Serious: Anyway, your first shift begins in two minutes.
 Vance: I will give you the letter on the left side of the screen, and some information about your current recipient in the top-right corner.
-Vance: Select which messenger to dispatch with the letter on the right side of the screen, then press Send.
+Vance: Select which messenger to dispatch with the letter on the right side of the screen, and then press Send.
 Vance: Good luck. And may your bad news be the best news!

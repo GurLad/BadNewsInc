@@ -45,10 +45,10 @@ size_flags_horizontal = 4
 DefaultName = "Vance"
 
 [node name="Text" type="Label" parent="VBoxContainer/CenterContainer/HBoxContainer"]
-custom_minimum_size = Vector2(256, 80)
+custom_minimum_size = Vector2(272, 80)
 layout_mode = 2
 theme_override_styles/normal = ExtResource("3_4bqci")
-text = "Your job will be to oversee all our talented messengers and assign them letters based on their strengths and weaknesses."
+text = "I will give you the letter on the left side of the screen, and some information about your current recipient in the top-right corner."
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
