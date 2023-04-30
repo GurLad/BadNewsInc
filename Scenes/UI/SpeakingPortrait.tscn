@@ -24,6 +24,7 @@ DefaultName = "Palla"
 [node name="Text" type="Label" parent="HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
+autowrap_mode = 3
 
 [node name="PortraitRight" parent="HBoxContainer" instance=ExtResource("1_u003w")]
 visible = false

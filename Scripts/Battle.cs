@@ -18,15 +18,12 @@ public partial class Battle : Node
         base._Ready();
         messenger = GetNode<SpeakingPortrait>("Control/VBoxContainer/Messenger");
         target = GetNode<SpeakingPortrait>("Control/VBoxContainer/Target");
+        messenger.CurrentLetter = target.CurrentLetter = CurrentLetter;
         messenger.PortraitName = CurrentMessenger.IntToMessengerName();
-        target.PortraitName = CurrentLetter switch // Hardcoding FTW
-        {
-            0 => "Esther",
-            _ => "Palla"
-        };
         target.VASuffix = CurrentMessenger.IntToMessengerName();
         using var file = FileAccess.Open("res://Letters/Letter" + (CurrentLetter + 1) + ".txt", FileAccess.ModeFlags.Read);
         string content = file.GetAsText();
+        target.PortraitName = content.GetLineParts(1)[0];
         lines = content.GetLineParts(2 + CurrentMessenger);
         PlayNextLine();
     }
@@ -46,6 +43,7 @@ public partial class Battle : Node
         {
             Main.Current.ToPreperations(CurrentLetter + 1, "Day " + (CurrentLetter + 2));
             QueueFree();
+            return;
         }
         string targetLine = lines[currentLine++];
         GD.Print("Line is " + targetLine);

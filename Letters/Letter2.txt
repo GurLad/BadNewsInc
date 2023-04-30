@@ -34,7 +34,7 @@ Flake: We have also found multiple bloodstains around your office.
 Robert|Angry: It's ketchup.
 Flake: And this morning, the body of your boss, Simon, was found in the fridge.
 Robert|Angry: He committed suicide.
-Flake: Alongside a wooden sign saying, “With love, Robert” nailed to his head.
+Flake: Alongside a wooden sign saying, "With love, Robert" nailed to his head.
 Robert|Seething: That's just his death note!
 Flake: The police have been informed, and are currently on their way to your house.
 Robert|Seething: WHAT?! How dare you invite the police without my permission!!!
@@ -48,7 +48,7 @@ Palla: I am happy to inform you that you have been officially dismissed from our
 Robert|Angry: Give me one good reason for firing me!
 Palla: We have prepared a list of excuses for firing you.
 Robert: Excuses?
-Palla: Several of your coworkers reported on you coming to work carrying a… gun. Oh.
+Palla: Several of your coworkers reported on you coming to work carrying a... gun. Oh.
 Robert|Angry: Yeah. So? It's my right.
 Palla: We also found multiple bloodstains around your office. You should've cleaned them better.
 Robert|Angry: It's ketchup.
