@@ -1,4 +1,4 @@
-Dear Vence,
+Dear Vance,
 I appreciate the job opportunity you gave me.
 I learned a lot from it, and it was quite unlike any other job I ever had.
 However, I no longer feel comfortable gambling on the life of my co-workers every day.
@@ -6,61 +6,61 @@ Also, I don't enjoy working for free.
 Therefore, please accept this letter as my official resignation, effective today.
 May your bad days be the best days,
 You
-~Vence
+~Vance
 Your boss from the intro. You do remember the intro, right? Anyway, you don't know much else. And why are even you talking to yourself? - You
 ~
-Luke: Dear Vence,
-Vence: Oh? A letter for me? It's good news, right?
+Luke: Dear Vance,
+Vance: Oh? A letter for me? It's good news, right?
 Luke: I appreciate the job opportunity you gave me.
-Vence: Why, thank you!
+Vance: Why, thank you!
 Luke: I learned a lot from it, and it was quite unlike any other job I ever had.
-Vence|Laugh: Oh, what a pretty thank you letter! You really made my day here!
+Vance|Laugh: Oh, what a pretty thank you letter! You really made my day here!
 Luke: However, I no longer feel comfortable gambling on the life of my co-workers every day.
-Vence|Serious: What do you mean?
+Vance|Serious: What do you mean?
 Luke: Also, I don't enjoy working for free.
-Vence|Angry: It's not my fault we're bankrupt.
+Vance|Angry: It's not my fault we're bankrupt.
 Luke: Therefore, please accept this letter as my official resignation, effective today.
-Vence|Seething: R-r-resignation?!
-Vence|Seething: No! No, you can't resign! I don't have any way to replace you!
+Vance|Seething: R-r-resignation?!
+Vance|Seething: No! No, you can't resign! I don't have any way to replace you!
 Luke: May your bad days be the best days, You.
-Vence|Seething: That doesn't even make sense!
-Vence|Seething: Don't... don't leave me! Come back!
-Vence|Seething: Noooooooo!
+Vance|Seething: That doesn't even make sense!
+Vance|Seething: Don't... don't leave me! Come back!
+Vance|Seething: Noooooooo!
 ~
-Flake: Dear Vence,
-Vence: Oh? A letter for me? It's good news, right?
+Flake: Dear Vance,
+Vance: Oh? A letter for me? It's good news, right?
 Flake: I appreciate the job opportunity you gave me.
-Vence: Why, thank you!
+Vance: Why, thank you!
 Flake: I learned a lot from it, and it was quite unlike any other job I ever had.
-Vence|Laugh: Oh, what a pretty thank you letter! You really made my day here!
+Vance|Laugh: Oh, what a pretty thank you letter! You really made my day here!
 Flake: However, I no longer feel comfortable gambling on the life of my co-workers every day.
-Vence|Serious: What do you mean?
+Vance|Serious: What do you mean?
 Flake: Also, I don't enjoy working for free.
-Vence|Angry: It's not my fault we're bankrupt.
+Vance|Angry: It's not my fault we're bankrupt.
 Flake: Therefore, please accept this letter as my official resignation, effective today.
-Vence|Seething: R-r-resignation?!
-Vence|Seething: No! No, you can't resign! I don't have any way to replace you!
+Vance|Seething: R-r-resignation?!
+Vance|Seething: No! No, you can't resign! I don't have any way to replace you!
 Flake: May your bad days be the best days, You.
-Vence|Seething: That doesn't even make sense!
-Vence|Seething: Don't... don't leave me! Come back!
-Vence|Seething: Noooooooo!
+Vance|Seething: That doesn't even make sense!
+Vance|Seething: Don't... don't leave me! Come back!
+Vance|Seething: Noooooooo!
 ~
-Palla: Dear Vence,
-Vence: Oh? A letter for me? It's good news, right?
+Palla: Dear Vance,
+Vance: Oh? A letter for me? It's good news, right?
 Palla: I appreciate the job opportunity you gave me.
-Vence: Why, thank-
-Vence|Angry: Wait, resign?!
+Vance: Why, thank-
+Vance|Angry: Wait, resign?!
 Palla: I learned so much from it, and it was quite unlike any other job I ever had.
-Vence|Angry: Yeah, because it's the best job! Don't give it up like this!
+Vance|Angry: Yeah, because it's the best job! Don't give it up like this!
 Palla: However, I no longer feel comfortable gambling on the life of my co-workers every day.
-Vence|Seething: It's not your life! What's the problem here?!
+Vance|Seething: It's not your life! What's the problem here?!
 Palla: Also, I don't enjoy working for free. Unlike Palla, who loves it.
-Vence|Seething: Yes! Be like Palla! She's great!
+Vance|Seething: Yes! Be like Palla! She's great!
 Palla: Therefore, please accept this non-existent letter as my official resignation, effective today.
-Vence|Seething: T-t-today?!
-Vence|Seething: No! No, you can't resign! I don't have any way to replace you!
+Vance|Seething: T-t-today?!
+Vance|Seething: No! No, you can't resign! I don't have any way to replace you!
 Palla: May your bad days be the best days, You.
-Vence|Seething: That doesn't even make sense!
-Vence|Seething: Don't... don't leave me! Come back!
-Vence|Seething: Noooooooo!
+Vance|Seething: That doesn't even make sense!
+Vance|Seething: Don't... don't leave me! Come back!
+Vance|Seething: Noooooooo!
 
