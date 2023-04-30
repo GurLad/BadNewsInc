@@ -23,7 +23,6 @@ Finn|Seething: Stop doing that!
 Luke: You are the best friend I ever had. I hope you know that.
 Finn|Seething: I told you to stop!
 Luke: So please, can you do just one favour for me?
-Finn|Anger: NO! DIE, YOU IMBEICLE!
 DEATH
 ~
 Flake: My dearest Finn,
@@ -39,7 +38,7 @@ Flake: So please, can you do just one favour for me?
 Finn: Sure! Anything for you!
 Flake: Promise me you won't kill anybody.
 Finn: You have my word. And I never break my word!
-Flake: Because I accidently burned down your house.
+Flake: Because I accidently burned your house down.
 Finn|Seething: YOU DID WHAT?! OH, YOU ARE SO DEA-
 Finn|Seething: ...
 Finn|Sad: I... I... My word...
@@ -53,7 +52,7 @@ Palla: I would like to thank you once again for letting me stay in your house du
 Finn: You're welcome. It is an amazing house.
 Palla: I really have no idea what I would've done without you.
 Finn|Angry: What's with your tone?
-Palla: And neighbourhood is so nice and so on and forth.
+Palla: And neighbourhood is so nice and so on and so forth.
 Finn|Angry: That doesn't sound like Clair. At all.
 Palla: And you're the best and bla bla bla.
 Finn|Seething: Hey, don't mock me!

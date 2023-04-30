@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public partial class VoiceActingController : Node
 {
-    private const int AMOUNT_OF_LEVELS = 2;
+    private const int AMOUNT_OF_LEVELS = 4;
     private static List<Dictionary<string, AudioStream>> VAFiles;
 
     public override void _Ready()
