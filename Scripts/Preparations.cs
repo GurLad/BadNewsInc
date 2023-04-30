@@ -1,5 +1,6 @@
 using Godot;
 using System;
+using System.Collections.Generic;
 
 public partial class Preparations : Control
 {
@@ -8,6 +9,9 @@ public partial class Preparations : Control
     private AudioStreamPlayer player;
     private MessengerSelect messengerSelect;
     private Timer timer;
+    private Label letterText;
+    private Label targetName;
+    private Label targetDescription;
     private bool beganDelay = false;
     private int currentPlaying = -1;
 
@@ -17,6 +21,18 @@ public partial class Preparations : Control
         player = GetNode<AudioStreamPlayer>("PreviewPlayer");
         messengerSelect = GetNode<MessengerSelect>("HBoxContainer/VBoxContainer/MessengerPanel");
         timer = GetNode<Timer>("VADelay");
+        letterText = GetNode<Label>("HBoxContainer/PanelContainer/HBoxContainer/Letter");
+        targetName = GetNode<Label>("HBoxContainer/VBoxContainer/TargetPanel/VBoxContainer/HBoxContainer/Name");
+        targetDescription = GetNode<Label>("HBoxContainer/VBoxContainer/TargetPanel/VBoxContainer/Description");
+        // Copy paste again!
+        using var file = FileAccess.Open("res://Letters/Letter" + (CurrentLetter + 1) + ".txt", FileAccess.ModeFlags.Read);
+        string content = file.GetAsText();
+        letterText.Text = string.Join("\n", content.GetLineParts(0));
+        List<string> targetLines = content.GetLineParts(1);
+        targetName.Text = targetLines[0];
+        targetLines.RemoveAt(0);
+        GD.Print(string.Join("\n", targetLines));
+        targetDescription.Text = string.Join("\n", targetLines);
     }
 
     public override void _Process(double delta)

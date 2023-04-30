@@ -1,2 +1,2 @@
-﻿52270
+﻿52328
 C:/Users/Gur/Documents/Godot/Godot_v4.0.2-stable_mono_win64/Godot_v4.0.2-stable_mono_win64.exe
