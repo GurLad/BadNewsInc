@@ -9,13 +9,26 @@ public partial class Main : Node
     [Export]
     public PackedScene BattleScene;
     [Export]
+    public PackedScene MenuScene;
+    [Export]
     public PackedScene Transition;
 
     public override void _Ready()
     {
         base._Ready();
         Current = this;
-        ToPreperations(0, "Day 1");
+        ToMenu();
+    }
+
+    public override void _Input(InputEvent @event)
+    {
+        if (@event is InputEventKey eventKey)
+        {
+            if (eventKey.Pressed && eventKey.Keycode == Key.F11)
+            {
+                DisplayServer.WindowSetMode(DisplayServer.WindowGetMode() == DisplayServer.WindowMode.Fullscreen ? DisplayServer.WindowMode.Windowed : DisplayServer.WindowMode.Fullscreen);
+            }
+        }
     }
 
     public void ToBattle(int letter, int messenger)
@@ -43,5 +56,10 @@ public partial class Main : Node
             AddChild(preparations);
         };
         AddChild(newTransition);
+    }
+
+    public void ToMenu()
+    {
+        AddChild(MenuScene.Instantiate<MainMenu>());
     }
 }

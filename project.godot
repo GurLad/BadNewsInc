@@ -38,7 +38,6 @@ project/assembly_name="BadNewsInc"
 theme/custom="res://DefaultTheme.tres"
 theme/custom_font="res://Fonts/HelvetiPixel.ttf"
 theme/default_font_antialiasing=0
-theme/default_font_subpixel_positioning=0
 
 [rendering]
 

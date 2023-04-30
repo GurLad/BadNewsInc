@@ -1,9 +1,9 @@
 [gd_scene load_steps=7 format=3 uid="uid://b4ctxdp3try76"]
 
 [ext_resource type="Script" path="res://Scripts/Main.cs" id="1_7b70s"]
-[ext_resource type="Texture2D" uid="uid://cf4etdlkrss2b" path="res://Textures/UI/Background.png" id="2_3kilm"]
 [ext_resource type="PackedScene" uid="uid://cy6lw6vfq74xa" path="res://Scenes/Preparations.tscn" id="2_jmfp3"]
 [ext_resource type="PackedScene" uid="uid://dh8t5md7bgfyn" path="res://Scenes/Battle.tscn" id="3_4rt0x"]
+[ext_resource type="PackedScene" uid="uid://3g21ujhcs3u3" path="res://Scenes/Menu.tscn" id="4_anjte"]
 [ext_resource type="PackedScene" uid="uid://bkq25vxfhbr0h" path="res://Scenes/Transition.tscn" id="4_sc45n"]
 [ext_resource type="AudioStream" uid="uid://dcdjy3vifueoi" path="res://Music/CalmNews.mp3" id="5_0fo3n"]
 
@@ -11,6 +11,7 @@
 script = ExtResource("1_7b70s")
 PreperationsScene = ExtResource("2_jmfp3")
 BattleScene = ExtResource("3_4rt0x")
+MenuScene = ExtResource("4_anjte")
 Transition = ExtResource("4_sc45n")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
@@ -26,12 +27,11 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="TextureRect" type="TextureRect" parent="Background"]
+[node name="TextureRect" type="ColorRect" parent="Background"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_3kilm")
-stretch_mode = 1
+color = Color(0, 0, 0, 1)
