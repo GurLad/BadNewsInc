@@ -1,4 +1,4 @@
-To: Robert        Subject: Work term update
+To: Robert         Subject: Work term update
 I regret to inform you that you have been officially dismissed from our company, effective immediately.
 We have received numerous complaints about your conduct recently.
 Several employees reported you coming to work carrying a gun.
@@ -12,5 +12,51 @@ Leon
 He's literally a serial murderer. Stay away from him if you can. Oh wait, you can't. It's your job to deliver the letter to him.
  - Leon
 ~
+Luke: To: Robert
+Luke: Subject: Work term update
+Robert|Angry: Is this some kind of a joke?
+Luke: I regret to inform you that you have been officially dismissed from our company, effective immediately.
+Robert|Seething: Get out of my house, kid!
+Luke: We have received numerous complaints about your conduct recently.
+Robert|Seething: AAAAAH! STOP IT! DIE!!!
+DEATH
 ~
+Flake: To: Robert
+Flake: Subject: Work term update
+Robert: What is it now?
+Flake: I regret to inform you that you have been officially dismissed from our company, effective immediately.
+Robert|Angry: You fired me? You have no right!
+Flake: We have received numerous complaints about your conduct recently.
+Robert|Angry: I also complained about all my co-workers, yet nobody listened to me.
+Flake: Several employees reported you coming to work carrying a gun.
+Robert|Angry: Yeah. So? It's my right.
+Flake: We have also found multiple bloodstains around your office.
+Robert|Angry: It's ketchup.
+Flake: And this morning, the body of your boss, Simon, was found in the fridge.
+Robert|Angry: He committed suicide.
+Flake: Alongside a wooden sign saying, “With love, Robert” nailed to his head.
+Robert|Seething: That's just his death note!
+Flake: The police have been informed, and are currently on their way to your house.
+Robert|Seething: WHAT?! How dare you invite the police without my permission!!!
+Robert|Seething: DIE!!!
+DEATH
 ~
+Palla: To: Robert
+Palla: Subject: Work term update. You've been fired.
+Robert|Angry: What? Why?
+Palla: I am happy to inform you that you have been officially dismissed from our company, effective immediately.
+Robert|Angry: Give me one good reason for firing me!
+Palla: We have prepared a list of excuses for firing you.
+Robert: Excuses?
+Palla: Several of your coworkers reported on you coming to work carrying a… gun. Oh.
+Robert|Angry: Yeah. So? It's my right.
+Palla: We also found multiple bloodstains around your office. You should've cleaned them better.
+Robert|Angry: It's ketchup.
+Palla: And this morning, the body of your boss, Simon, was found in the fridge. How nice of you to preserve his meat.
+Robert: Yeah, I was planning to eat him this evening. I hope they kept his body there.
+Palla: Alongside a wooden sign saying, "With love, Robert", nailed to his head. Very touching.
+Robert: A better fate than he deserved.
+Palla: The police have been informed, and are currently on their way to your house.
+Robert|Seething: What? Who invited them?!
+Palla: I wish you all the best in your future endeavours, Leon.
+Robert|Seething: Leon?! Oh, he is going to PAY for this!

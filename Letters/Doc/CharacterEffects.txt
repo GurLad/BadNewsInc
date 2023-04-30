@@ -6,3 +6,5 @@ Palla:
 Pitch 20%
 Esther:
 Speed 30%
+Robert:
+Speed -30%
