@@ -46,11 +46,11 @@ public partial class VoiceActingController : Node
             string fileName = dir.GetNext();
             while (fileName != "")
             {
-                if (!dir.CurrentIsDir() && !fileName.Contains(".import"))
+                if (!dir.CurrentIsDir() && fileName.Contains(".import"))
                 {
-                    string name = fileName.Substring(0, fileName.LastIndexOf("."));
+                    string name = fileName.Substring(0, fileName.IndexOf("."));
                     //GD.Print(name);
-                    AudioStream audioStream = ResourceLoader.Load<AudioStream>(path + "/" + fileName);
+                    AudioStream audioStream = ResourceLoader.Load<AudioStream>(path + "/" + fileName.Replace(".import", ""));
                     VAFiles[letter].Add(name, audioStream);
                 }
                 fileName = dir.GetNext();

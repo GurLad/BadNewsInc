@@ -17,10 +17,11 @@ public partial class PortraitController : Node
             string fileName = dir.GetNext();
             while (fileName != "")
             {
-                if (!dir.CurrentIsDir() && !fileName.Contains(".import"))
+                GD.Print("entering " + fileName);
+                if (!dir.CurrentIsDir() && fileName.Contains(".import"))
                 {
-                    string name = fileName.Substring(0, fileName.LastIndexOf("."));
-                    Texture2D texture = ResourceLoader.Load<CompressedTexture2D>("res://AllPortraits/" + fileName);
+                    string name = fileName.Substring(0, fileName.IndexOf("."));
+                    Texture2D texture = ResourceLoader.Load<CompressedTexture2D>("res://AllPortraits/" + fileName.Replace(".import", ""));
                     Portraits.Add(name, texture);
                 }
                 fileName = dir.GetNext();
